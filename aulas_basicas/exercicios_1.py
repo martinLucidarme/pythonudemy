@@ -4,7 +4,13 @@ programa q peça digitar um nome inteiro, se nao for inteiro, digit: nao é inte
 
 numint = input('Digite um inteiro')
 if numint.isdigit():
-    print('Obrigado')
+    numint = int(numint)
+    half = numint/2
+    try: # técnica meio errada, melhor um if com modulo (par: num%2 == 0)
+        half.isdigit()
+        print(f'{numint} é um número par')
+    except:
+        print(f'{numint} é um número impar')
 else:
     print('não é inteiro')
 
@@ -16,7 +22,7 @@ minutos = input('Digite os minutos')
 hora_int = int(hora)
 if hora_int >= 0 and hora_int < 12:
     print('Bom Dia !\nSão '+ hora +' horas e '+ minutos + ' minutos')
-elif hora_int >= 12 and hora_int<18:
+elif hora_int >= 12 and hora_int<17:
     print('Boa Tarde !\nSão ' + hora + ' horas e ' + minutos + ' minutos')
 else:
     print('Boa Noite !\nSão ' + hora + ' horas e ' + minutos + ' minutos')
