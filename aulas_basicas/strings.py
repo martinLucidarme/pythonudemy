@@ -23,3 +23,13 @@ data= ano-idade
 print(f'{nome} tem {idade} anos, {altura} de altura e pesa {peso} kilos.')
 print(f'O IMC de {nome} é {imc:.2f}.')
 print(f'{nome} nasceu em {data}')
+
+#Índices e fatiamento
+#Indices positivos de texto:  [012345678]
+texto                     =   'Python s2'
+#Indices negativos de texto: -[987654321]
+# [ inicio : fim: pace ]
+nova_string = texto[:6] #do 0 inicial até 6 nao incluido
+print(nova_string)
+print(texto[0::2])  # aqui o 2 é o pace
+print(texto[:-1])  # útil para tirar ultimo carater
