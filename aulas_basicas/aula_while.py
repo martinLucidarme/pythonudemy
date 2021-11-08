@@ -27,9 +27,10 @@ y = 0
 while y < 10:
     print(y)
     y+=1
-    if y == 8:
+    if y == 12:
         break
 else:  # do something when leaving the while
-    print(y)
+    print( str(y) + ' pas breaké dans le while')
+
 
 print(f'While breaked with y = {y}')
