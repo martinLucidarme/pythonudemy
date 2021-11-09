@@ -88,15 +88,15 @@ while True:
         print(f'Vacilou, {letra} não existe na palavra secreta \n sobra {chances} chances')
         chances -= 1
 
-    secreto_temporario = '' # esvazia a lista do print a cada laço
-    for letra_secreta in secreto: #checagem das letras da palavra uma por uma na ordem
-        if letra_secreta in digitadas: # a letra foi digitada pelo usuario
+    secreto_temporario = ''  # esvazia a lista do print a cada laço
+    for letra_secreta in secreto:  # checagem das letras da palavra uma por uma na ordem
+        if letra_secreta in digitadas:  # a letra foi digitada pelo usuario
             secreto_temporario += letra_secreta # adiciona na lista do PRINT
         else:
             secreto_temporario += '*'
 
-    if secreto_temporario == secreto: #condição de vitoria
+    if secreto_temporario == secreto:  # condição de vitoria
         print(f'Parabéns, você ganhou um {secreto}, pois a palavra era {secreto}')
         break
 
-    print(secreto_temporario) # lista de ajuda do print, não de armazenamento (digitadas)
+    print(secreto_temporario)  # lista de ajuda do print, não de armazenamento (digitadas)
