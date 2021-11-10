@@ -43,7 +43,7 @@ lista_de_lista =  [ [1,2],[3,4],[5,6]]
 lista_simple = [2,4,6]
 for i,v in lista_de_lista:
     print(i,v)
-for a,b in enumerate(lista_simple):
+for a,b in enumerate(lista_simple): # Indice do enumerate comeca no 0
     print(a,b)
 
 # Desempacotamento
