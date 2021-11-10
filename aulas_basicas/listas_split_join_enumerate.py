@@ -35,7 +35,7 @@ print(string2)
 print(listaa)
 print(string3)
 
-# Enumerate (cria um objeto enumerate: feito para ser iterado)
+# Enumerate (cria um objeto enumerate: feito para ser iterado, contando a partir do valor (padrão =0)
 for indice, valor_real in enumerate(listaa):
     print(indice, valor_real) # valor real é a msm coisa q listaa[indice]
 
@@ -43,7 +43,7 @@ lista_de_lista =  [ [1,2],[3,4],[5,6]]
 lista_simple = [2,4,6]
 for i,v in lista_de_lista:
     print(i,v)
-for a,b in enumerate(lista_simple): # Indice do enumerate comeca no 0
+for a,b in enumerate(lista_simple): # enumerate conta, ele nao retorna indices enumerate(objeto, start=0)
     print(a,b)
 
 # Desempacotamento
