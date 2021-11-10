@@ -35,7 +35,7 @@ print(string2)
 print(listaa)
 print(string3)
 
-# Enumerate
+# Enumerate (cria um objeto enumerate: feito para ser iterado)
 for indice, valor_real in enumerate(listaa):
     print(indice, valor_real) # valor real é a msm coisa q listaa[indice]
 
