@@ -20,7 +20,7 @@ Digito 1 = 0        # Digito 2 = 9
 """
 
 # minha solução
-cpf = '16899535009'
+cpf = input('Digite numeros do seu cpf sem pontos nem traço')
 novo_cpf = cpf[:-2]
 soma = 0
 
