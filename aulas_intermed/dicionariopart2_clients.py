@@ -39,4 +39,31 @@ v = copy.deepcopy(d1)  # agora os dois são totalmente independentes
 v[1] = 'nao é mais luiz'
 v['lista'][0] = 'Modifica v apenas'
 print(d1)  # v[1] foi modificado agora no v (str imutável),
-print(v)  # a lista foi modif em v e d1: lista é mutável
+print(v, '\n')  # a lista foi modif em v e d1: lista é mutável
+
+#  Criar dict com items parecidos (listas, tuplas...)
+l1 = [
+    ['c1', 1],
+    ['c2', 2],
+    ['c3', 3],
+]
+
+dico = dict(l1)
+print(dico)
+
+dico2 = {
+    1:2,
+    2:3,
+    4:5,
+}
+dico3 = {
+    1:5,
+    2:4,
+    4:3,
+}
+
+print(dico2)
+dico2.pop(2)  #  popitem() tira o ultimo
+print(dico2)
+dico2.update(dico3)
+print(dico2)
