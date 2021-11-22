@@ -11,7 +11,7 @@ print(list(nova_lista),'\n')  # resultado bem parecido com um list comprehension
 
 #  map() mais interessante para dict
 
-##### Precos produtos #####
+##### Precos produtos ######
 
 def aumenta_preco(p):
     p['preco'] = round(p['preco']*1.05, 2)
