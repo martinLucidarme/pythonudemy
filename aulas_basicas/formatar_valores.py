@@ -31,7 +31,7 @@ nome2 = 'Martoni martin'
 sobrenome = 'Eba'
 print(f'{nome2:#^50}') #funciona tb com string
 
-nome_formatado = '{:@>25}'.format(nome2) # mesma coisa com function format
+nome_formatado = '{:@>25}'.format(nome2) # mesma coisa com function formatacao
 nome_for = '{n:0>20}'.format(n=nome2) # formatando a chave n
 nome2_for = '{0:&>25} {1:#^25}'.format(nome2, sobrenome ) # formatando as variavel segundo lugar delas
 print(nome_formatado)
