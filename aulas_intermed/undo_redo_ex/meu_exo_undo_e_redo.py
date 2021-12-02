@@ -38,4 +38,3 @@ tirados = tirados + desfeita[0]
 refeita = refazer(tirados, new_list)
 print(refeita[0])
 
-
