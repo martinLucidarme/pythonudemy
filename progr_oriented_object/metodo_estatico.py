@@ -31,4 +31,4 @@ print(p2.nome, p2.idade)
 p1.get_ano_nascimento()
 
 print(Pessoa.gera_id())
-print(p1.gera_id())
+print(p1.gera_id())  # static method recebe class ou instancia
