@@ -1,5 +1,5 @@
 from pessoa import Pessoa
-
+#  p1 e p2 são as chamadas instâncias
 p1 = Pessoa('Luiz', 29)  # método init para colocar as variáveis direto nos parametros de Pessoa()
 p2 = Pessoa('Joana', 32)
 
