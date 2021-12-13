@@ -1,4 +1,4 @@
-from classes4_heranca import *
+from classes4_heranca_e_sobreposicao import *
 
 """
 Associação : Usa - Agregação : Tem - Composição : É dono  - Hérança : É

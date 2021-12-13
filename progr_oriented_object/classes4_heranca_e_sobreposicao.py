@@ -32,9 +32,23 @@ class Cliente(Pessoa):  # Cliente vai ter todos os attrib de Pessoa (é uma subc
     def comprar(self):
         print(f'{self.nomeclasse} Comprando...')  # apenas do cliente
 
+    def falar(self):
+        print('é o falar da classe Cliente')
+
+
+class ClienteVIP(Cliente):  # temos Pessoa>Cliente>ClienteVIP
+    def __init__(self, nome, idade, sobrenome):
+        super().__init__(nome, idade)
+        self.sobrenome = sobrenome
+
+    def falar(self):  # eu posso sobreescrever: ISSO É A SOBREPOSICAO
+        super().falar()  # falar() do Cliente
+        # ele vai chamar o falar() da superclass no caso: Cliente, se nao tiver metodo falar(): vai pra Pessoa
+        Pessoa.falar(self)  # chama o falar() da class Pessoa diretamente, NAO ESQUECA O SELF
+        print(f'{self.nome} {self.sobrenome} ta falando')  # depois executa o resto
+
 
 class Aluno(Pessoa):
 
     def estudar(self):
         print(f'{self.nomeclasse} Estudando...')  # apenas do aluno
-
