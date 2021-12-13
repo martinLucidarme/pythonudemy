@@ -9,7 +9,7 @@ print(caneta.marca)
 maquina.escrever()
 print()
 print('----- Associação de class: ------')
-escritor.ferramenta = maquina  # associando a ferramenta ao escritor
+escritor.ferramenta = maquina  # associando a ferramenta ao escritor.
 escritor.ferramenta.escrever()
 
 del escritor
