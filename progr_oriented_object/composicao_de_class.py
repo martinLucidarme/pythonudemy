@@ -1,12 +1,10 @@
-
 from classes3_compo import Cliente  # classes compostas: nem preciso importar endereco
 
 clientes1 = Cliente('Luiz', 32)
 print(clientes1.nome)
-clientes1.inserir_endereco('BH','MG')
+clientes1.inserir_endereco('BH', 'MG')
 clientes1.lista_endereco()
 del clientes1  # vai remover o Cliente E SEUS OBJETOS (Endereco no caso)
-
 print()
 
 clientes2 = Cliente('Maria', 55)
