@@ -31,3 +31,4 @@ class Caneta:
 class MaquinaDeEscrever:
     def escrever(self):
         print('Máquina está escrevendo...')
+

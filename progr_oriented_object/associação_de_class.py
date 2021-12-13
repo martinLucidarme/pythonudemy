@@ -1,4 +1,4 @@
-from classes import Escritor, Caneta, MaquinaDeEscrever
+from classes1_asso import Escritor, Caneta, MaquinaDeEscrever
 
 escritor = Escritor('Joazim')
 caneta = Caneta('Bic')
