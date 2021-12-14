@@ -22,7 +22,6 @@ class D(B, C):
     posso inverter a ordem assim: class D(C, B)
     """
 
-
 d = D()
 d.falar()  # ele vai usar o falar de B()
 
