@@ -1,4 +1,4 @@
-class TaErradoError(Exception):
+class TaErradoError(Exception):  # Error no nome + Exception na assinatura
     pass
 
 
