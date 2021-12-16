@@ -1,4 +1,4 @@
-class LogMixin:  #| Nao precisa das outras classes mas aqui par ser adicionada a outras classes
+class LogMixin:  # Nao precisa das outras classes mais aqui par ser adicionada a outras classes
     @staticmethod  # porque nunca se utiliza o self no método
     def writer(msg):
         with open('log.log', 'a+') as f:
