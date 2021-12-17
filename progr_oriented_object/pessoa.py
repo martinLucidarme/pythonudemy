@@ -1,7 +1,9 @@
 from datetime import datetime
 
+
 class Pessoa:
     ano_atual = int(datetime.strftime(datetime.now(), '%Y'))  # atributo de class
+
     # def falar(self):  # isso é um metodo
     #    print('Pessoa está falando')
 
