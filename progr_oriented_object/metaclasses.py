@@ -40,3 +40,22 @@ class B(A):
 
 
 b = B()
+
+# Criar uma classe com type:
+class Pai:
+    nome = 'Teste'
+
+
+cl = type(
+    'Cl',
+    (Pai,),
+    {
+        'attr': 'Ola Mundo'
+
+    }
+)
+
+cla = cl()
+print(type(cla))
+print(cla.nome)
+
