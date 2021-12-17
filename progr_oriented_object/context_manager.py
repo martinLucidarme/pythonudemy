@@ -20,7 +20,7 @@ class Arquivo:
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         print('Saiu da classe')
-        self.arquivo.close()
+        self.arquivo.close()  # automatiza o fechamento
 
 
 with  Arquivo('abc.txt', 'w') as arquivo:
@@ -39,7 +39,7 @@ def abrir(arquivo, modo):
         yield arquivo
     finally:
         print('Fechando arquivo')
-        arquivo.close()
+        arquivo.close()  # automatiza o fechamento
 
 
 with abrir('abc2.txt', 'w') as file:
