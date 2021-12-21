@@ -9,7 +9,7 @@ import polimorfismo
 import metodos_magicos
 
 
-def funcao_documenta(x, y, z = 0):
+def funcao_documenta(x, y, z=0):
     """
     Geometria no espaço
 
@@ -24,7 +24,18 @@ def funcao_documenta(x, y, z = 0):
     return {'Abcisse': x, 'Ordonnée': y, 'Azimut': z}
 
 
+# possso falar na assinatura da funcao o que eu quero tb:
+
+def varios_tipos(a: int, b: float, c: str):
+    return f'{c} é mais legal que {b} ou {a} '
+
+
+def definir_return(a: int, b: float, c: str) -> str:  # posso dizer os tipos esperados e o tipo do retorno
+    return 10  # PyCharm mostra q nao retorna o esperado
+
 help(heranca_simples)
 help(polimorfismo)
 help(metodos_magicos)
 help(funcao_documenta)
+
+varios_tipos('pas int',4,8.5) # PyCharm mostra q tipo ta errado
