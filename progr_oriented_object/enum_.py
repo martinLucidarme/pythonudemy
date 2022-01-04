@@ -27,7 +27,7 @@ def move(direction):
 def move_enum(direction):
     if not isinstance(direction, Directions):
         """ 
-        Agora to vendo se a direção ta na class
+        Agora to vendo se a direção ta na classe do Enum
         """
         raise ValueError('Cannot move in this direction')
 
