@@ -7,6 +7,7 @@ usado para salvar as data no sistema
 """
 
 from datetime import datetime, timedelta
+from locale import setlocale, LC_ALL
 
 data = datetime(2019, 4, 20, 10, 53, 20)
 print(data)
@@ -35,3 +36,12 @@ print(dif.days)
 print(d5.time())  # mostra só as horas duma data
 
 print(data5 < d5)  # pode comparar as datas
+
+dt = datetime.now()  # pega a data atual
+formatacao = dt.strftime('%A, %d de %B de %Y')
+print(formatacao)  # vai aparecer em ingles
+
+setlocale(LC_ALL, '')  # pega local padrão do computador (pode fazer: setlocale(LC_ALL, 'pt_BR.utf-8')
+formatacao2 = dt.strftime('%A, %d de %B de %Y')
+print(formatacao2)
+
