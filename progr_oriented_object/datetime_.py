@@ -21,7 +21,7 @@ data3 = datetime.fromtimestamp(1555768400.0)  # retorna data a partir do timesta
 print(data3)
 
 data4 = datetime.strptime('20/04/1987 20:00:00', '%d/%m/%Y %H:%M:%S')
-data4 = data4 + timedelta(days=5, seconds=59*60)  # adiciona 5 dias e 59 minutos
+data4 = data4 + timedelta(days=5, seconds=59 * 60)  # adiciona 5 dias e 59 minutos
 print(data4.strftime('%d/%m/%Y %H:%M:%S'))
 
 data5 = datetime.strptime('20/04/1987 20:00:00', '%d/%m/%Y %H:%M:%S')
@@ -34,4 +34,4 @@ print(dif.days)
 
 print(d5.time())  # mostra só as horas duma data
 
-print(data5<d5)  # pode comparar as datas
+print(data5 < d5)  # pode comparar as datas
