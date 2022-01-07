@@ -1,3 +1,9 @@
+"""
+Caminhos no windows: barra invertida :\
+para o Python nao executar elas na stre (\n,\t...)
+colocar r na frente da string. Ex: r'nao\vai\executar\as\barras'
+"""
+
 import os
 from formata_tamanho_bytes import formata_tamanho
 
