@@ -1,3 +1,5 @@
+""" initialiser la commande dans le fichier, et écrire: python nom_du_fichier.py"""
+
 import os
 import sys
 
@@ -26,3 +28,4 @@ for arquivo in os.listdir('.'):
     if so_diretorios:
         if os.path.isdir(arquivo):
             print(arquivo)
+
