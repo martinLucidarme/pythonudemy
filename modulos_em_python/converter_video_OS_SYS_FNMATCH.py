@@ -21,11 +21,11 @@ codec_audio = '-c:a aac'
 crf = '-crf 23'  # 18 melhor qld, 28 pior qld
 preset = '-preset ultrafast'  # ultrafast: arquivos maiores
 bitrate_audio = '-b:a 320k'
-debug = '-ss 00:00:00 -to 00:00:10'  # para converter o video inteiro: debug = ''
+debug = ''  # para converter o video inteiro: debug = ''
 
-caminho_origem = r'C:\Users\Martin Lucidarme\Downloads'
-caminho_destino = r'C:\Users\Martin Lucidarme\Downloads\convert_vid_Python'
-extensao_desejada = '.mp4'
+caminho_origem = r'D:\video'
+caminho_destino = r'C:\videoconvertido'
+extensao_desejada = '.mkb'
 
 for raiz, deps, arquivos in os.walk(caminho_origem):
     for arquivo in arquivos:
