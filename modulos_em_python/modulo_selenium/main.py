@@ -23,7 +23,7 @@ class ChromeAuto:
 
     def clica_sign_in(self):
         try:
-            btn_sign_in = self.chrome.find_element(By.CSS_SELECTOR, '[href="/login"]')
+            btn_sign_in = self.chrome.find_element(By.ID, 'username')
             btn_sign_in.click()
 
         except Exception as e:
@@ -36,10 +36,10 @@ class ChromeAuto:
 
     def faz_login(self):
         try:
-            input_login = self.chrome.find_element(By.ID, 'email')
+            input_login = self.chrome.find_element(By.ID, 'username')
             input_password = self.chrome.find_element(By.ID, 'password')
             input_login.send_keys('mlucidarme@myeasyfarm.com')
-            input_password.send_keys('*****')
+            input_password.send_keys('Fe3eighe')
             sleep(2)
             submit = self.chrome.find_element(By.CSS_SELECTOR, '[data-test-id="login-login-button"]')
             submit.click()
@@ -70,13 +70,13 @@ if __name__ == '__main__':
     chrome.clica_sign_in()
     chrome.faz_login()
     chrome.clica_selecionado('#app > div.bLayout.flex__scroll.js-scroll > div.bSidebar.bSidebar_expanded > div.bSidebar__nav > a:nth-child(6) > span')
-    sleep(3)
-    chrome.clica_selecionado('#app > div.bLayoutHeader > div.bLayoutHeader__nav > div > a:nth-child(4) > div > svg')
-    sleep(3)
-    chrome.verifica_usuario('Martin Lucidarme')
-    sleep(3)
-    chrome.clica_selecionado('#app > div.bLayout.flex__scroll.js-scroll > div.bLayout__content > div > div > div.bSection__scroll > div > div > div > div > div > div > div > div.aligner__fluid > div > div.aligner__right > div > div.formItemInline.formItemInline_sm > button')
-    sleep(3)
+    # sleep(3)
+    # chrome.clica_selecionado('#app > div.bLayoutHeader > div.bLayoutHeader__nav > div > a:nth-child(4) > div > svg')
+    # sleep(3)
+    # chrome.verifica_usuario('Martin Lucidarme')
+    # sleep(3)
+    # chrome.clica_selecionado('#app > div.bLayout.flex__scroll.js-scroll > div.bLayout__content > div > div > div.bSection__scroll > div > div > div > div > div > div > div > div.aligner__fluid > div > div.aligner__right > div > div.formItemInline.formItemInline_sm > button')
+    # sleep(3)
 
     sleep(2)
     chrome.sair()
