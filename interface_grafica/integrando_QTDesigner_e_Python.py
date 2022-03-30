@@ -3,6 +3,7 @@ Comando no terminal para passar design.ui in python
 
 pyuic5 design.ui -o design.py
 
+
 '''
 
 import sys
