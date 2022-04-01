@@ -1,6 +1,6 @@
 """"
 pip install pymysql
-
+base de dados from MySQL Workbench and Udemy
 CRUD: Create Read Update Delete
 """
 
